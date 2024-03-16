@@ -1,0 +1,91 @@
+There are three diff guppy populations: popC, popL, popT
+
+PART 1:
+
+All files are in BAM format. We will be filtering the differenet variants with
+UNCC's research cluster, Centarus with the goal of putting only the SNPs in a file.
+We'll call the SNPs in the file using a slurm script.
+
+The data will then be outputted in VCF formatted files. 
+
+Now, we are going to run 4 filters on the SNPs.
+Filter 1: remove any SNP sites where more than 50% of the samples in the population have missing data
+Filter 2: remove any sites where the minor allele frequency (i.e., the ALT allele frequency) is less than 1%
+Filter 3: remove sites without exactly 2 alleles (i.e., will keep only bi-allelelic sites)
+Filter 4: remove indels, and keep only SNPs
+
+The data will ouput VCF formatted files that are sorted based on the filters.
+
+PART 2:
+
+Now we are going to run a statistic called Tajima's D with the outputted VCF formatted files.
+
+What is Tajima's D? Looks for rare mutation patterns in regions of the genome (but this also depends how you look at it).
+If value > 0, indicates negative correlation for rare mutation patterns.
+If value < 0, indicates positive correlation for rare mutation patterns.
+If value = 0, indicates neutral correlation for rare mutation patterns.
+
+We want to find the most rare mutation patterns in regions of the genome based.
+We'll use all the values < -2 to determine the most rare.
+
+The data will then be outputted.
+
+Now that we have the data, visually, we just see a bunch of numbers.
+So we need to create a plot that visually shows the data.
+
+I used Python. Here my code creates a sliding window plot of the stats.
+
+PART 3:
+
+Hint: the species name for guppy is Poecilia reticulata. Your SNP data set comes from chromosome 15, which is the same as LG15.
+
+Question 6: Provide a list of all genes located in any overlapping regions under selection that you found for Q5. How many genes are there in total?  (2 pts)
+
+Gene:	LOC103476551
+RNA title:	mRNA-B-cadherin-like
+Protein title:	B-cadherin-like
+Location:	85,696..111,337
+
+Gene:	LOC103476549
+Location:	118,132..135,178
+Length:	17,047 nt
+
+Gene:	LOC103476546
+Location:	complement(135,680..167,654)
+Length:	31,975 nt
+
+Gene:	rasgrp3
+Location:	complement(167,746..196,441)
+Length:	28,696 nt
+
+Gene:	ltbp1
+Location:	complement(199,342..276,731)
+Length:	77,390 nt
+
+Gene:	ttc27
+RNA title:	mRNA-tetratricopeptide repeat domain 27
+Protein title:	tetratricopeptide repeat protein 27
+Merged features:	XM_008429011.2 and XP_008427233.1
+Location:	complement(281,975..332,593)
+
+Gene:	birc6
+Location:	complement(336,559..392,243)
+Length:	55,685 nt
+
+Gene:	LOC108166965
+Location:	353,489..356,540
+Length:	3,052 nt
+
+There are a total of 8 genes in the overlapping region of Chromosome LG15 in Poecilia reticulata. 
+
+Question 7: Pick 2 genes from this list that look interesting to you. What are the human orthologs of these genes, and what are their potential functions? Do you have any hypotheses about how these could be related to fish adaptation in some way? (2 pts).
+
+Prof Note: I am not looking for a single "right" answer here; I just want you to explore your results a bit and try to come up with some kind of hypothesis or conclusion.
+
+ttc27 tetratricopeptide repeat domain 27 
+a. The human ortholog has ubiquitous expression in testis, thyroid and 25 other tissues. It enables molecular function as well as protein binding. It also has a role in biological processes and is active in cellular components. 
+b. Hypotheses: Just like the gene is responsible for thyroid regulating the metabolism for humans, the gene may be responsible for regulating fish-related organ functions. When this gene isn’t functional, this could potentially be the reason for fish-related diseases such as dropsy and swim bladder disease.
+
+RASGRP3 RAS guanyl releasing protein 3 
+a. The protein encoded by this gene in the human ortholog  is a guanine nucleotide exchange factor that activates the oncogenes HRAS and RAP1A. Defects in this gene have been associated with systemic lupus erythematosus and several cancers. This gene has functions in enabling GTPase activator activity, calcium ion binding, diacylglycerol binding, guanyl-nucleotide exchange factor activity, kinase binding, and protein binding.
+b. Hypotheses: Because the gene has functions in activating cellular processes in humans, most likely this happens with fish as well. Potentially, this protein could affect phenotypic expression of pigmentation in guppies based off neurotransmitters.
