@@ -78,14 +78,27 @@ Length:	3,052 nt
 
 There are a total of 8 genes in the overlapping region of Chromosome LG15 in Poecilia reticulata. 
 
-Question 7: Pick 2 genes from this list that look interesting to you. What are the human orthologs of these genes, and what are their potential functions? Do you have any hypotheses about how these could be related to fish adaptation in some way? (2 pts).
+Question 7: Pick 2 genes from this list that look interesting to you. What are the human orthologs 
+of these genes, and what are their potential functions? Do you have any hypotheses about how these 
+could be related to fish adaptation in some way? (2 pts).
 
-Prof Note: I am not looking for a single "right" answer here; I just want you to explore your results a bit and try to come up with some kind of hypothesis or conclusion.
+Prof Note: I am not looking for a single "right" answer here; I just want you to explore your results 
+a bit and try to come up with some kind of hypothesis or conclusion.
 
 ttc27 tetratricopeptide repeat domain 27 
-a. The human ortholog has ubiquitous expression in testis, thyroid and 25 other tissues. It enables molecular function as well as protein binding. It also has a role in biological processes and is active in cellular components. 
-b. Hypotheses: Just like the gene is responsible for thyroid regulating the metabolism for humans, the gene may be responsible for regulating fish-related organ functions. When this gene isn’t functional, this could potentially be the reason for fish-related diseases such as dropsy and swim bladder disease.
+a. The human ortholog has ubiquitous expression in testis, thyroid and 25 other tissues. It enables 
+molecular function as well as protein binding. It also has a role in biological processes and is 
+active in cellular components. 
+b. Hypotheses: Just like the gene is responsible for thyroid regulating the metabolism for humans, 
+the gene may be responsible for regulating fish-related organ functions. When this gene isn’t functional, 
+this could potentially be the reason for fish-related diseases such as dropsy and swim bladder disease.
 
 RASGRP3 RAS guanyl releasing protein 3 
-a. The protein encoded by this gene in the human ortholog  is a guanine nucleotide exchange factor that activates the oncogenes HRAS and RAP1A. Defects in this gene have been associated with systemic lupus erythematosus and several cancers. This gene has functions in enabling GTPase activator activity, calcium ion binding, diacylglycerol binding, guanyl-nucleotide exchange factor activity, kinase binding, and protein binding.
-b. Hypotheses: Because the gene has functions in activating cellular processes in humans, most likely this happens with fish as well. Potentially, this protein could affect phenotypic expression of pigmentation in guppies based off neurotransmitters.
+a. The protein encoded by this gene in the human ortholog  is a guanine nucleotide exchange factor that 
+activates the oncogenes HRAS and RAP1A. Defects in this gene have been associated with systemic lupus 
+erythematosus and several cancers. This gene has functions in enabling GTPase activator activity, calcium 
+ion binding, diacylglycerol binding, guanyl-nucleotide exchange factor activity, kinase binding, and protein 
+binding.
+b. Hypotheses: Because the gene has functions in activating cellular processes in humans, most likely this 
+happens with fish as well. Potentially, this protein could affect phenotypic expression of pigmentation in 
+guppies based off neurotransmitters.
